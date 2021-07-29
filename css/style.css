@@ -1,0 +1,6 @@
+li a{
+    border-radius: 0.25rem;
+}
+li a:hover{
+    background-color: white;
+}
