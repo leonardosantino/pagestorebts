@@ -5,17 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>BootStrap</title>
+    <title>Bootstrap</title>
 </head>
-<!-- row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 -->
-<!-- col-sm-12 -->
-
+<!-- row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 col-sm-12 -->
 <body class="container-fluid">
-
     <header class="row">
-
         <nav class="navbar navbar-dark bg-dark justify-content-between">
             <!--  Button Collapse -->
             <div class="d-md-none">
@@ -25,23 +22,18 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
-
-            <!-- Img lgo -->
+            <!-- Img logo -->
             <div>
                 <a href="">
                     <!-- class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"  -->
                     <img src="imgs/logo.png" class="img-fluid" alt="buy" width="64" height="64">
                 </a>
             </div>
-
-            <!-- Search -->
-            <form class="nav d-none d-md-block" >
+            <!-- Pesquisa Nav -->
+            <form class="nav d-none d-md-block col-lg-4" >
                 <!-- class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" -->
                 <input type="search" class="form-control form-control-dark" placeholder="Pesquise" aria-label="Search">
             </form>
-
-
-
             <!-- Menus lista md -->
             <div class="d-none d-md-block">
                 <ul class="nav">
@@ -51,14 +43,12 @@
                     <li><a href="#" class="nav-link text-warning">Carinho</a></li>
                 </ul>
             </div>
-
             <!-- Login Sign-up -->
             <div class="text-end">
                 <button type="button" class="btn btn-outline-light me-2">Login</button>
                 <button type="button" class="btn btn-outline-warning">Sign-up</button>
             </div>
         </nav>
-
         <!-- Collapse navebar -->
         <div class="navbar-collapse collapse bg-dark d-md-none" id="navbarsExample01">
             <div>
@@ -74,11 +64,11 @@
                     </li>
                 </ul>
             </div>
+            <!-- Pesquisa Collapse -->
             <form class=" nav mb-3">
                 <input class="form-control" type="search" placeholder="Pesquise" aria-label="Search">
             </form>
         </div>
-
     </header>
 
     <main class="row">Main
