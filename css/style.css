@@ -7,13 +7,14 @@ input:focus {
 box-shadow: none !important;
 }
 li a{
+    font-size: 0.90rem;
     border-radius: 0.25rem;
 }
 li a:hover{
     background-color: white;
 }
 .card {
-   width: 11rem;
+   width: 10rem;
    margin-bottom: 1rem;
 }
 .prodTitle {
