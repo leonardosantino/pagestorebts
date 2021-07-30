@@ -1,6 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+* {
+    font-family: 'Gowun Dodum', sans-serif;
+    transition: 0.5s ease-in-out;
+}
+input:focus {
+box-shadow: none !important;
+}
 li a{
     border-radius: 0.25rem;
 }
 li a:hover{
     background-color: white;
+}
+.card {
+   width: 11rem;
+   margin-bottom: 1rem;
+}
+.prodTitle {
+    color: #525354;
+    margin-top: 5px;
+    font-size: 1rem;
+}
+.prodTitle:hover {
+    transform: scale(1.05);
+    color: orange;
+}
+.stars img:hover {
+    transform: scale(1.50);
+}
+.precoDE {
+    color: #666;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: line-through;
+}
+.precoDE:hover {
+    color: red;
+}
+.precoPOR {
+    display: block;
+    color: #0046b4;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.precoPOR:hover{
+    transform: scale(1.05);
+}
+.precoPARC {
+    display: block;
+    color: #707070;
+    font-size: 0.74rem;
+    line-height: 1rem;
 }

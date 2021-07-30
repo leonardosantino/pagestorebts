@@ -11,33 +11,38 @@
     <title>Bootstrap</title>
 </head>
 <!-- row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 col-sm-12 -->
+
 <body class="container-fluid">
     <header class="row">
-        <nav class="navbar navbar-dark bg-dark justify-content-between">
+        <nav class="navbar navbar-dark bg-primary justify-content-between">
             <!--  Button Collapse -->
             <div class="d-md-none">
                 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false"
+                    data-bs-target="#navcollapse" aria-controls="navcollapse" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
             <!-- Img logo -->
             <div>
-                <a href="">
+                <a href="#">
                     <img src="imgs/logo.png" class="img-fluid" alt="buy" width="64" height="64">
                 </a>
             </div>
             <!-- Pesquisa Nav -->
-            <form class="nav d-none d-md-block col-lg-4" >
-                <input type="search" class="form-control form-control-dark" placeholder="Pesquise" aria-label="Search">
+            <form class="nav d-none d-md-block col-lg-4">
+                <div class="input-group">
+                    <img src="imgs/search.svg" class="input-group-text" alt="search">
+                    <!-- <label for="floatingInput">Pesquise</label> -->
+                    <input type="text" class="form-control" placeholder="Pesquise" aria-label="Pesquise">
+                </div>
             </form>
             <!-- Menus lista md -->
             <div class="d-none d-md-block">
                 <ul class="nav">
-                    <li><a href="#" class="nav-link text-warning">Produtos</a></li>
-                    <li><a href="#" class="nav-link text-warning">Categorias</a></li>
-                    <li><a href="#" class="nav-link text-warning">Carinho</a></li>
+                    <li><a href="#" class="nav-link text-warning fw-bold">PRODUTOS</a></li>
+                    <li><a href="#" class="nav-link text-warning fw-bold">CATEGORIAS</a></li>
+                    <li><a href="#" class="nav-link text-warning fw-bold">CARRINHO</a></li>
                 </ul>
             </div>
             <!-- Login Sign-up -->
@@ -47,28 +52,181 @@
             </div>
         </nav>
         <!-- Collapse navebar -->
-        <div class="navbar-collapse collapse bg-dark d-md-none" id="navbarsExample01">
+        <div class="navbar-collapse collapse bg-primary d-md-none" id="navcollapse">
             <div>
                 <ul class="nav justify-content-center p-0 my-3">
                     <li class="nav-item">
-                        <a class="nav-link text-warning" aria-current="page" href="#">Categorias</a>
+                        <a class="nav-link text-warning fw-bold" aria-current="page" href="#">PRODUTOS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-warning" aria-current="page" href="#">Produtos</a>
+                        <a class="nav-link text-warning fw-bold" aria-current="page" href="#">CATEGORIAS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-warning" aria-current="page" href="#">Carrinho</a>
+                        <a class="nav-link text-warning fw-bold" aria-current="page" href="#">CARRINHO</a>
                     </li>
                 </ul>
             </div>
             <!-- Pesquisa Collapse -->
-            <form class=" nav mb-3">
-                <input class="form-control" type="search" placeholder="Pesquise" aria-label="Search">
+            <form class="nav mb-3">
+                <div class="input-group">
+                    <img src="imgs/search.svg" class="input-group-text" alt="buy">
+                    <input type="text" class="form-control" placeholder="Pesquise" aria-label="Pesquise">
+                </div>
             </form>
         </div>
     </header>
 
-    <main class="row">Main
+    <main class="row">
+        <!-- Carrousel -->
+        <div class="carousel slide my-3" id="carouselExampleControls" data-bs-ride="carousel">
+            <div class="carousel-inner rounded">
+                <div class="carousel-item active">
+                    <a href="#">
+                        <img src="imgs/Banner_2996.jpg" class="d-block w-100" alt="...">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/Banner_2997.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/Banner_3009.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- PRODUTOS -->
+        <div class="row row-cols-2 row-cols-md-4 justify-content-evenly m-0 ">
+            <!-- Card 1 -->
+            <div class="card">
+                <a class="text-decoration-none" href="#" title="Notebook Samsung Flash 30">
+                    <!-- Image -->
+                    <div class="carouselProdutos_img px-2 py-2">
+                        <img src="imgs/498572.jpg" class="img-fluid">
+                    </div>
+                    <!-- Title -->
+                    <div class="text-center">
+                        <div class="">
+                            <h3 class="prodTitle">Notebook Samsung Flash 30 Intel® Celero...</h3>
+                        </div>
+                        <!-- Stars -->
+                        <div class="stars">
+                            <img src="imgs/star.png" alt="">
+                            <img src="imgs/star.png" alt="">
+                            <img src="imgs/star.png" alt="">
+                            <img src="imgs/star.png" alt="">
+                            <img src="imgs/star.png" alt="">
+                            <span style="vertical-align: middle;font-size:12px">&nbsp;(3)</span>
+                        </div>
+                        <!-- descrição -->
+                        <div class="">
+                            <span class="precoDE">De: R$ 2.149,02</span>
+                            <span class="precoPOR">Por: R$ 1.999,90</span>
+                            <span class="precoPARC">10x de R$ 199,90 s/ juros</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- Carde 2 -->
+            <div class="card">
+                <a class="text-decoration-none" href="#" title="Notebook Lenovo Ultrafino Ideapad S145">
+                    <!-- Image -->
+                    <div class="carouselProdutos_img px-2 py-2">
+                        <img src="imgs/522490.jpg" class="img-fluid">
+                    </div>
+                    <!-- Title -->
+                    <div class="text-center">
+                        <div class="">
+                            <h3 class="prodTitle">Notebook Lenovo Ultrafino Ideapad S145...</h3>
+                        </div>
+                        <!-- Stars -->
+                        <div class="stars">
+                            <img src="imgs/star.png" alt="">
+                            <img src="imgs/star.png" alt="">
+                            <img src="imgs/star.png" alt="">
+                            <img src="imgs/star.png" alt="">
+                            <img src="imgs/star.png" alt="">
+                            <span style="vertical-align: middle;font-size:12px">&nbsp;(10)</span>
+                        </div>
+                        <!-- descrição -->
+                        <div class="">
+                            <span class="precoDE">De: R$ 2.849,02</span>
+                            <span class="precoPOR">Por: R$ 2.999,00</span>
+                            <span class="precoPARC">10x de R$ 299,90 s/ juros</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- Card 3 -->
+            <div class="card">
+                <a class="text-decoration-none" href="#" title="Notebook Samsung Galaxy Book S Intel®">
+                    <!-- Image -->
+                    <div class="carouselProdutos_img px-2 py-2">
+                        <img src="imgs/528170.jpg" class="img-fluid">
+                    </div>
+                    <!-- Title -->
+                    <div class="text-center">
+                        <div class="">
+                            <h3 class="prodTitle">Notebook Samsung Galaxy Book S Intel® C...</h3>
+                        </div>
+                        <!-- Stars -->
+                        <div class="stars">
+                            <img src="imgs/star.png" alt="">
+                            <img src="imgs/star.png" alt="">
+                            <img src="imgs/star.png" alt="">
+                            <img src="imgs/star.png" alt="">
+                            <img src="imgs/star.png" alt="">
+                            <span style="vertical-align: middle;font-size:12px">&nbsp;(3)</span>
+                        </div>
+                        <!-- descrição -->
+                        <div class="">
+                            <span class="precoDE">De: R$ 3.99,00</span>
+                            <span class="precoPOR">Por: R$ 2.499,90</span>
+                            <span class="precoPARC">10x de R$ 249,90 s/ juros</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- Card 4 -->
+            <div class="card">
+                <a class="text-decoration-none" href="#" title="Notebook Samsung Chromebook Intel®">
+                    <!-- Image -->
+                    <div class="carouselProdutos_img px-2 py-2">
+                        <img src="imgs/533777.jpg" class="img-fluid">
+                    </div>
+                    <!-- Title -->
+                    <div class="text-center">
+                        <div class="">
+                            <h3 class="prodTitle">Notebook Samsung Chromebook Intel® Cele...</h3>
+                        </div>
+                        <!-- Stars -->
+                        <div class="stars">
+                            <img src="imgs/star.png" alt="">
+                            <img src="imgs/star.png" alt="">
+                            <img src="imgs/star.png" alt="">
+                            <img src="imgs/star.png" alt="">
+                            <img src="imgs/star.png" alt="">
+                            <span style="vertical-align: middle;font-size:12px">&nbsp;(7)</span>
+                        </div>
+                        <!-- descrição -->
+                        <div class="">
+                            <span class="precoDE">De: R$ 3.600,02</span>
+                            <span class="precoPOR">Por: R$ 3.449,90</span>
+                            <span class="precoPARC">10x de R$ 349,90 s/ juros</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
     </main>
 
     <footer class="row">Footer
