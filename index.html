@@ -14,7 +14,7 @@
 
 <body class="container-fluid">
     <header class="row">
-        <nav class="navbar navbar-dark bg-primary justify-content-between">
+        <nav class="navbar navbar-dark bg-color justify-content-between">
             <!--  Button Collapse -->
             <div class="d-lg-none">
                 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
@@ -78,7 +78,7 @@
 
     <main class="row">
         <!-- Carrousel -->
-        <div class="carousel slide my-3" id="carouselExampleControls" data-bs-ride="carousel">
+        <div class="carousel slide my-3" id="carouselControls" data-bs-ride="carousel">
             <div class="carousel-inner rounded">
                 <div class="carousel-item active">
                     <a href="#">
@@ -92,12 +92,12 @@
                     <img src="imgs/Banner_3009.jpg" class="d-block w-100" alt="...">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselControls"
                 data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
@@ -105,7 +105,7 @@
         </div>
 
         <!-- PRODUTOS -->
-        <div class="row row-cols-2 row-cols-lg-4 justify-content-evenly m-0 ">
+        <div class="row row-cols-2 row-cols-lg-4 justify-content-evenly my-5 mx-0 ">
             <!-- Card 1 -->
             <div class="card">
                 <a class="text-decoration-none" href="#" title="Notebook Samsung Flash 30">
@@ -128,7 +128,7 @@
                             <span style="vertical-align: middle;font-size:12px">&nbsp;(3)</span>
                         </div>
                         <!-- descrição -->
-                        <div class="">
+                        <div>
                             <span class="precoDE">De: R$ 2.149,02</span>
                             <span class="precoPOR">Por: R$ 1.999,90</span>
                             <span class="precoPARC">10x de R$ 199,90 s/ juros</span>
@@ -145,7 +145,7 @@
                     </div>
                     <!-- Title -->
                     <div class="text-center">
-                        <div class="">
+                        <div>
                             <h3 class="prodTitle">Notebook Lenovo Ultrafino Ideapad S145...</h3>
                         </div>
                         <!-- Stars -->
@@ -158,7 +158,7 @@
                             <span style="vertical-align: middle;font-size:12px">&nbsp;(10)</span>
                         </div>
                         <!-- descrição -->
-                        <div class="">
+                        <div>
                             <span class="precoDE">De: R$ 2.849,02</span>
                             <span class="precoPOR">Por: R$ 2.999,00</span>
                             <span class="precoPARC">10x de R$ 299,90 s/ juros</span>
@@ -188,7 +188,7 @@
                             <span style="vertical-align: middle;font-size:12px">&nbsp;(3)</span>
                         </div>
                         <!-- descrição -->
-                        <div class="">
+                        <div>
                             <span class="precoDE">De: R$ 3.99,00</span>
                             <span class="precoPOR">Por: R$ 2.499,90</span>
                             <span class="precoPARC">10x de R$ 249,90 s/ juros</span>
@@ -218,7 +218,7 @@
                             <span style="vertical-align: middle;font-size:12px">&nbsp;(7)</span>
                         </div>
                         <!-- descrição -->
-                        <div class="">
+                        <div>
                             <span class="precoDE">De: R$ 3.600,02</span>
                             <span class="precoPOR">Por: R$ 3.449,90</span>
                             <span class="precoPARC">10x de R$ 349,90 s/ juros</span>
@@ -229,7 +229,77 @@
         </div>
     </main>
 
-    <footer class="row">Footer
+    <footer class="row  bg-color mt-5">
+        <!-- colum pagamento -->
+        <div class="col-lg-6 mt-3">
+            <h5 class="tl-one">Formas de Pagamento</h5>
+            <hr>
+            <div class="row row-cols-3 g-2 row-cols-lg-4 text-center">
+                <div title="VISA">
+                    <img src="imgs/visa.svg"
+                        class="img-pagamento" alt="VISA" title="VISA" width="55" height="40">
+                </div>
+                <div title="MASTERCARD">
+                    <img src="imgs/master.svg"
+                        class="img-pagamento" alt="MASTERCARD" title="MASTERCARD" width="55" height="40">
+                </div>
+                <div title="AMERICAN EXPRESS">
+                    <img src="imgs/american.svg"
+                        class="img-pagamento" alt="AMERICAN EXPRESS" title="AMERICAN EXPRESS" width="55" height="40">
+                </div>
+                <div title="HIPERCARD">
+                    <img src="imgs/hiper.svg"
+                        class="img-pagamento" alt="HIPERCARD" title="HIPERCARD" width="110" height="40">
+                </div>
+                <div title="Elo">
+                    <img src="imgs/elo.svg"
+                        class="img-pagamento" alt="Elo" title="Elo" width="55" height="40">
+                </div>
+                <div title="JCB">
+                    <img src="imgs/jcb.svg"
+                        class="img-pagamento" alt="JCB" title="JCB" width="55" height="40">
+                </div>
+                <div title="Boleto">
+                    <img src="imgs/boleto.svg"
+                        class="img-pagamento" alt="Boleto" title="Boleto" width="55" height="40">
+                </div>
+                <div title="Pix">
+                    <img src="imgs/pix.svg"
+                        class="img-pagamento" alt="Pix" title="Pix" width="55" height="30">
+                </div>
+            </div>
+        </div>
+        <!-- colum contato -->
+        <div class="col-lg-6 mt-3">
+            <h4 class="tl-one">Central de Atendimento</h4>
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <h5 class="tl-two">Telemarketing </h5>
+                    <ul class="list-unstyled tl-three tl-four">
+                        <li>Telefone: <a href="tel:0800-08001010">0800 08001010</a></li>
+                        <li>Seg. a Sex. das 08:00 até 18:30<br>Sab. das 09:00 até 15:20</li>
+                        <li><a href="mailto:atendimento@loja.com.br" title="Nosso e-mail de contato se você comprou produto na loja física">atendimento@loja.com.br</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5 class="tl-two">Atendimento</h5>
+                    <ul class="list-unstyled tl-three tl-four">
+                        <li>Telefone: <a href="tel:0800-08001010">0800 08001010</a></li>
+                        <li>Seg. a Sex. das 08:00 até 18:00<br> Sábados das 08:30 às 17:00</li>
+                        <li><a href="mailto:atendimento@loja.com.br" title="Nosso e-mail de contato se você comprou produto no site">atendimento@loja.com.br</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5 class="tl-two">Vendas</h5>
+                    <ul class="list-unstyled tl-three tl-four">
+                        <li>Telefone: <a href="tel:+55-81-0101-1000">(81) 0101.1000</a></li>
+                        <li>Seg. a Sex. das 08:00 até 18:00 <br> Exceto Feriados</li>
+                        <li><a href="mailto:atendimento@nagem.com.br" title="Nosso e-mail de contato para empresas">atendimento@loja.com.br</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="js/bootstrap.bundle.min.js"></script>
