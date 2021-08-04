@@ -5,11 +5,11 @@
 input:focus {
 box-shadow: none !important;
 }
-li a{
+nav a{
     font-size: 0.90rem;
     border-radius: 0.25rem;
 }
-li a:hover{
+nav a:hover{
     background-color: white;
 }
 .card {
@@ -80,7 +80,6 @@ li a:hover{
 hr {
     border-top: 3px solid rgba(255, 255, 255, 0.233);
 }
-
 .img-pagamento {
     width: 5.5rem;
     height: 3.5rem;
