@@ -5,13 +5,14 @@
 input:focus {
 box-shadow: none !important;
 }
-nav a{
+.nav-link{
     font-size: 0.90rem;
     border-radius: 0.25rem;
 }
-nav a:hover{
+.nav-link:hover{
     background-color: white;
 }
+
 .card {
    width: 10rem;
    margin-bottom: 1rem;
@@ -55,9 +56,11 @@ nav a:hover{
     font-size: 0.74rem;
     line-height: 1rem;
 }
-
 .bg-color {
     background-color: #0046b4;
+}
+.bg-cltwo {
+    background-color: #00CDA6;
 }
 .tl-one {
     color: #5692f0;
@@ -80,10 +83,12 @@ nav a:hover{
 hr {
     border-top: 3px solid rgba(255, 255, 255, 0.233);
 }
-.img-pagamento {
-    width: 5.5rem;
+.img-pay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 3.5rem;
-    padding: 0.5rem;
+    width: 6.5rem;
     border-radius: 0.25rem;
-    background-color: #fff;
+    background-color: #ffffff;
 }
